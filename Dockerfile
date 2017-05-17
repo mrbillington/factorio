@@ -1,4 +1,4 @@
-FROM FROM alpine:latest
+FROM alpine:latest
 
 MAINTAINER mrbillington
 
