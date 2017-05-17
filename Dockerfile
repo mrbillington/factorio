@@ -1,9 +1,8 @@
+FROM FROM alpine:latest
 
-FROM ubuntu:latest
+MAINTAINER mrbillington
 
-MAINTAINER Collin Townsend
-
-ENV FACTORIO_VERSION="0.13.20" 
+ENV FACTORIO_VERSION "0.13.20" 
 
 RUN apt-get update &&\
   apt-get install -y curl && \

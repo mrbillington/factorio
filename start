@@ -1,1 +1,3 @@
-/app/factorio/bin/x64/factorio --start-server savename
+#!/usr/bin/with-contenv bash
+
+/opt/factorio/bin/x64/factorio --start-server savename
