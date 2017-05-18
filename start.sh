@@ -10,4 +10,4 @@ if ! find -L /factorio/saves -iname \*.zip -maxdepth 1 -print | grep -q . ; then
 	ls -la /factorio/
 fi
 
-/config/factorio/bin/x64/factorio --start-server-load-latest --server-settings /config/server-settings.json --mod-directory /config/mods
+/factorio/bin/x64/factorio --start-server-load-latest --server-settings /config/server-settings.json --mod-directory /config/mods
