@@ -1,8 +1,7 @@
 #!/bin/sh -x
 set -e
 
-mkdir -p /factorio/saves
-ln -s /factorio/saves /config/saves
+ln -s /config/saves /factorio/saves
 cp -rp /files/ /conifg
 
 ls -la /config
