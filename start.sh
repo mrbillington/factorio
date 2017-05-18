@@ -4,11 +4,7 @@ set -e
 ln -s /config/saves /factorio/saves
 cp -rp /files/ /conifg
 
-ls -la /config
-ls -la /files
-ls -la /factorio
-
-if ! find -L /factorio/saves -iname \*.zip -mindepth 1 -print | grep -q . ; then
+if ! find -L /factorio/saves -iname \*.zip -maxdepth 1 -print | grep -q . ; then
 	echo "No save files found. Creating new map."
 	/factorio/bin/x64/factorio --create /factorio/saves/_autosave1.zip --map-gen-settings /config/map-gen-settings.json
 	ls -la /factorio/
