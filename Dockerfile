@@ -10,7 +10,10 @@ RUN tar xf /tmp/factorio_headless_x64.tar.xz && rm /tmp/factorio_headless_x64.ta
 VOLUME ["/config"]
 
 EXPOSE 34197/udp
+
+RUN mkdir /files
 COPY map-gen-settings.example.json server-settings.example.json /files/
+
 COPY start.sh /
 
 CMD ["./start.sh"]
